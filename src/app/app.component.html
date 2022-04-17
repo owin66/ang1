@@ -5,7 +5,13 @@
 <p>{{arr}}</p>
 <p>{{obj.b.c}}</p>
 -->
-<img [src]="img" alt="react_icon">
+
+<button (click)="onClick()">Click me!</button>
+<input type="text" (keyup)="onInput($event)">
+<p><strong>{{inputValue}}</strong></p>
+
+
+<!--<img [src]="img" alt="react_icon">-->
 <hr>
 <app-post></app-post>
 <app-post2></app-post2>
