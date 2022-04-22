@@ -7,8 +7,10 @@
 -->
 
 <button (click)="onClick()">Click me!</button>
-<input type="text" (keyup)="onInput($event)">
-<p><strong>{{inputValue}}</strong></p>
+
+<input #box (keyup.enter)="onEnter(box.value)">
+
+<p><strong>{{value}}</strong></p>
 
 
 <!--<img [src]="img" alt="react_icon">-->
